@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФОП Марченко Олександр</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .lang-toggle {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-toggle button {
+            padding: 6px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .label {
+            font-weight: bold;
+        }
+        p {
+            margin: 6px 0 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-toggle">
+            <button onclick="showSection('ua')">Українська</button>
+            <button onclick="showSection('en')">English</button>
+        </div>
+
+        <div id="ua" class="section active">
+            <h1>ФОП Марченко Олександр</h1>
+            <p><span class="label">Email:</span> (не вказано)</p>
+            <p><span class="label">Телефон:</span> (не вказано)</p>
+            <p><span class="label">Адреса:</span> (не вказано)</p>
+            <p><span class="label">Опис діяльності:</span><br>Розробка мобільних додатків на платформі Android. Публікація та підтримка додатків у Google Play.</p>
+        </div>
+
+        <div id="en" class="section">
+            <h1>Sole Proprietor Marchenko Oleksandr</h1>
+            <p><span class="label">Email:</span> (not specified)</p>
+            <p><span class="label">Phone:</span> (not specified)</p>
+            <p><span class="label">Address:</span> (not specified)</p>
+            <p><span class="label">Business Description:</span><br>Development of mobile applications for the Android platform. Publishing and maintaining apps on Google Play.</p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
