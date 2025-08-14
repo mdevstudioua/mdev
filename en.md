@@ -6,11 +6,11 @@ title: Sole Proprietor Marchenko Oleksandr
 
 # Sole Proprietor Marchenko Oleksandr
 
-Email: (not specified)
+Email: mdev.studio.ua@gmail.com
 
-Phone: (not specified)
+Phone: +380982125464
 
-Address: (not specified)
+Address: Semena Bardadyma st. 28, Dnipro
 
 Business Description:
 Development of mobile applications for the Android platform. Publishing and maintaining apps on Google Play.
